@@ -49,3 +49,42 @@ Bash is a command language interpreter.  It is the default shell.
 
 
 
+# 1.4 Forking and Cloning Reflection 
+
+1.  
+
+Creating a Repo:
+
+Click the "+" next to your avatar on GitHub.
+
+select "New repository"
+
+enter the name of your repository where it says "Repository name"
+
+Creating a Fork:
+
+Select a repository you wish to fork.
+
+Click fork below your avatar.
+
+Select your username.
+
+Creating a clone:
+
+Select repository you wish to clone.
+
+On right side look for "HTTPS clone URL" and copy the url.
+
+Open your command line.
+
+Change directory on the command line to the one you wish to clone to.
+
+Enter git clone < copied URL >
+
+ 
+
+Forking to a project could allow a user to play with and work on code without affecting the original.  They can also fork to a project to ultimately contribute to it.
+
+ 
+
+2. I did not run into any specific struggles setting up git and GitHub.  Something I was worried about when creating a fork was that it would affect the master.  I feel more confident with playing around with GitHub now.
