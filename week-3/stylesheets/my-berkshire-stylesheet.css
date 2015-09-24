@@ -1,0 +1,138 @@
+.navy {
+    color: #000080
+}
+
+.raleway {
+  font-family: Raleway;
+}
+
+header {
+  background-image: url("../imgs/gecko.png");
+}
+
+a {
+    color: #800080
+}
+a:visited {
+    color: #ff0000
+}
+.bg-white {
+    background-color: #ffffff
+}
+
+.whole-list {
+    display:inline-block;
+}
+
+.list-left {
+    float:left;
+    width:48%;
+
+}
+.list-right {
+    float:right;
+    width:48%;
+
+}
+footer {
+    clear:both;
+}
+
+.no-margin {
+  margin: 0.0em;
+}
+
+.sm-font {
+  font-size: 0.6em;
+}
+
+.md-font {
+  font-size: 0.8em;
+}
+
+.center {
+  text-align: center;
+}
+
+span {
+  font-size: 0.6em;
+}
+
+header {
+  font-weight: bold;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.0em;
+  margin: 0.0em;
+}
+
+h1 > span {
+  font-size: 2.0em
+}
+
+header h2 {
+  font-size: 0.8em;
+  margin: 0.0em;
+}
+
+header h3 {
+  font-size: 1.0em;
+  margin: 0.0em;
+}
+
+li {
+  margin: 30px;
+}
+
+.sm-pic {
+  height: 100px;
+  width: auto;
+}
+
+/** {
+  border:1px solid red;
+}*/
+
+.line-break {
+  background-color:black;
+  height: 1px;
+  margin: 15px;
+}
+
+.bold {
+  font-weight: bold;
+}
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+It is important to make sure you have the directory correct when adding it! And of course being able to spell style correctly (instead of styel).
+
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+We used chrome developer tools and
+* {
+  border:1px solid red;
+}
+to display boxes around each element on our page.  This helped us visualize what margins or padding existed around our elements and helped us place them.
+
+
+We used a trick that was shown in the codeacademy.com tutorials.  We set the width for our elements to be ~48% and used float:right and float:left to specify which side of the page our items would show on.
+
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+We used a lot of different CSS to modify elements.  We used different fonts that we pulled in from google fonts.  Different sizes, different colors, different text alignments.  We experimented with margins and creating them or removing them from elements.
+
+
+
+Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
+
+We modified almost all of our HTML with classes.  We were re-using things like making text a certain size often so we created a class just for those.  We decided to create classes based on which actions we were doing.  i.e. class="sm-font no-margin center" would make the font small, have no margin and center the text.
+
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?*/
+
+/*I think ours did, we tried to follow html-5 tag guidelines and atomic css.  When you look at our code verse the berkshire code, it is very plain what is going on or being applied to each line.*/
