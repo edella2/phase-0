@@ -17,7 +17,7 @@ You can edit the parent of the tree to change all the children to be a different
 
 `Static positioning` - is the inital value for CSS elements.  It is laid out in the current position in the flow and top, right, bottom, left and z-index properties do not apply.
 
-`Relative positioning` - this lays out all elements as though they were not positioned and then adjust the elements position accorind to the changing layout.
+`Relative positioning` - this lays out all elements as though they were not positioned and then adjust the elements position according to the changing layout.
 
 ### What are the differences between Margin, Border, and Padding?
 
