@@ -1,0 +1,62 @@
+*{
+	font-family: cursive;
+}
+
+header h1{
+	background-color:blue;
+	margin-bottom:0;
+}
+
+header p{
+	background-color: gray;
+	font-size:1em;
+}
+
+h2{
+	font-size:1.5em;
+	font-weight:bold;
+	font-family:cursive;
+	margin-bottom: 0;
+}
+
+p{
+	margin:0;
+	font-size:0.8em;
+}
+
+.column-1{
+	width:45%;
+	float:left;
+	margin-left:2.5%;
+}
+
+
+.column-2{
+	width:45%;
+	float:right;
+	margin-right:2.5%;
+}
+
+
+
+li{
+	list-style: none;
+}
+
+footer{
+	background-color: yellow;
+	clear:both;
+}
+
+code{
+	background-color: gray;
+	display:block;
+	font-weight:bold;
+}
+
+details p{
+	background-color: rgba(190, 210, 203, 0.89);
+
+}
+
+
