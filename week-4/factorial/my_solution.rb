@@ -1,6 +1,17 @@
 # Factorial
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, with: Ovi Calvo].
+
+=begin
+define a method factorial that takes an integer
+
+count down from the integer while it is greater than 0
+
+multiply the integer with a initial sum set to 1
+
+return output
+
+=end
 
 
 def factorial(integer)
