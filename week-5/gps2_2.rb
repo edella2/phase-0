@@ -1,3 +1,5 @@
+
+
 #1 Create list
 =begin
 Method that creates a new list
@@ -80,6 +82,8 @@ update_item(list_1,"Ice Cream", 1)
 print_list(list_1)
 
 
+
+#Something we messed around with after refactoring our code. We wanted to create something that could take user input for a list instead of hard coding in what variables would and keys would change above.
 def case_method
 
 #  puts "Please create a name for your list"
@@ -115,3 +119,30 @@ while input != "exit"
 end
 
 case_method
+
+=begin 
+What did you learn about pseudocode from working on this challenge?
+
+I learned keeping pseudocode too simple might make you overlook some steps.  When we were looking to print our list we had initially written our print method as literally "Prints the list".  We hadn't considered we would need to iterate through our hash to print out each item in the list until we were writing it out.
+
+What are the tradeoffs of using Arrays and Hashes for this challenge?
+
+Hashes made storing values and quantities much easier for this challenge.  During our pseudocode my pair and I decided that using hashes would be the best way to approach this problem.
+
+What does a method return?
+
+The last line of code in a method or any expression inside of it with 'return' before it.
+
+What kind of things can you pass into methods as arguments?
+
+You can pass, pretty much anything as arguments into methods.  We used hashes, strings and integers in our challenge.
+
+How can you pass information between methods?
+
+Information stored globally can be passed between methods.  We determined while writing out pseudocode that we would need to define our list as a global item, so it could be called and altered through our other methods.
+
+What concepts were solidified in this challenge, and what concepts are still confusing?
+
+I think the local and global variable concepts were solidifed during this challenge. There was a concept our guide brought up about using 'Object.send(:method)' that is still confusing to me, but I will be reading up on more to see what we could have done differently in our code with it.
+
+=end
