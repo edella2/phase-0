@@ -20,12 +20,33 @@
 
 # 1. Initial Solution
 def pad!(array, min_size, value = nil) #destructive
-  # Your code here
+  array.fill(value, array.length...min_size)
 end
 
+=begin
 def pad(array, min_size, value = nil) #non-destructive
-  # Your code here
+  if array.length >= min_size
+    return array
+  end
+  
+  i = 0
+  new_array = array
+  while (array.length + i) <= min_size
+    new_array << value
+    i += 1
+  end
+  return new_array
 end
+=end
+
+
+def pad(array, min_size, value = nil) #non-destructive  
+	new_array = Array.new
+	new_array += array
+    new_array.fill(value, array.length...min_size)
+
+end
+
 
 
 # 3. Refactored Solution
