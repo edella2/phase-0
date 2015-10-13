@@ -1,3 +1,4 @@
+=begin
 # Die Class 2: Arbitrary Symbols
 
 
@@ -6,9 +7,20 @@
 
 # Pseudocode
 
-# Input:
-# Output:
-# Steps:
+# Input: initialize an array of labels.  Initialize size length based on the labels array length.
+# Output: creates a Die with sides equal to the length of the array of labels.  
+#rolling
+# Steps: Initialize takes in an array of labels
+sides will be set to labels.length
+if labels.length is 1 or less return argumentError
+
+sides
+return number of sides of Die
+
+roll
+random(@sides) to find index of labels array
+( return array[rand(@sides)] )
+=end
 
 
 # Initial Solution
