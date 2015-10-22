@@ -16,6 +16,21 @@ var terah = {
 // __________________________________________
 // Write your code below.
 
+var adam = {}
+
+adam.name = "Adam";
+terah.spouse = adam;
+terah.weight = 125;
+delete terah.eyeColor;
+adam.spouse = terah;
+terah.children = {};
+
+terah.children.carson = {name: "Carson"};
+terah.children.carter = {name: "Carter"};
+terah.children.colton = {name: "Colton"};
+adam.children = terah.children;
+
+
 
 
 
@@ -28,12 +43,17 @@ var terah = {
 
 // __________________________________________
 // Reflection: Use the reflection guidelines
-//
-//
-//
-//
-//
-//
+//What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+
+// I had trouble adding the children at first for terah.  I wasn't sure if you could set an object in terah while creating and object for carson.  It took a few tries to get the test to pass.
+
+// How difficult was it to add and delete properties outside of the object itself?
+
+// The hardest part with deleting properties was finding out how to do it.  I had to look online for different ways to manipulate an object online. (http://www.w3schools.com/js/js_object_methods.asp).  But deleteing the object property.
+
+// What did you learn about manipulating objects in this challenge?
+
+// A lot, I wasn't very familiar with anything for objects until this assignment.  One thing I really enjoy about manipulating objects with JS is how you call them.  I really enjoy using dot notation and manipulating an object property was easy.  It felt easier than using ruby.
 
 
 // __________________________________________
