@@ -146,13 +146,25 @@ while (eric.alive === true && drago.alive === true) {
 
 
 
-
+/*
 // Reflection
-//
-//
-//
-//
-//
-//
-//
-//
+What was the most difficult part of this challenge?
+
+I had a hard time coming up with an idea for the game I wanted to make and to get user input to work.  Each time I tried to create a prompt for users to input a choice I would get an error when I ran the file in my console.  I was fairly certain it was prompt("message") to achieve this, but I may not have been able to test it in terminal.
+
+
+What did you learn about creating objects and functions that interact with one another?
+
+This was something I was surprised about, it was actually fairly easy to interact with other objects with one another and themselves with different functions.  I created a few that would alter the health and mana of their "targets" and themselves.
+
+
+
+Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+
+One that was fairly useful for testing was using Math.random.  I had trouble getting user input to work and used Math.random with Math.floor to create random choices.
+
+How can you access and manipulate properties of objects?
+
+You can access and manipulate properties of an object similar to how I would approach it in ruby.  With an example of a dog you could create a dog object (or class in ruby), define a function to it such as wagTail and call it outside of the object with the name.wagTail (name being whatever you made for the dog when initializing.)
+
+*/
