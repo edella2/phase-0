@@ -44,6 +44,11 @@ SELECT region_name, state_name
 FROM regions, states
 ORDER BY region_id ASC;
 
+##SCHEMA
+
+![schema](https://github.com/edella2/phase-0/blob/master/week-8/database-intro/schema.png "schema")
+
+
 
 ## REFLECTIONS
 
