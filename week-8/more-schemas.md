@@ -1,9 +1,9 @@
 
 ## RELEASE 2:
-![release_2](Release_2.png "release 2 schema")
+![release_2](imgs/Release_2.png "release 2 schema")
 
 ## RELEASE 4:
-![release_4](Release_4.png "release 4 schema")
+![release_4](imgs/Release_4.png "release 4 schema")
 
 ## REFLECTION
 
