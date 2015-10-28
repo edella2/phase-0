@@ -44,8 +44,10 @@ SELECT region_name, state_name
 FROM regions, states
 ORDER BY region_id ASC;
 
+
 ## SCHEMA
 ![schema](schema.png "schema")
+
 
 
 
