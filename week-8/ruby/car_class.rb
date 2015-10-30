@@ -28,7 +28,7 @@ define a method class that displays what action is happening
 
 =end
 # 3. Initial Solution
-
+=begin
 class Car
 
   def initialize(model,color)
@@ -85,9 +85,62 @@ class Car
 
 end
 
-
+=end
 # 4. Refactored Solution
 
+class Car
+
+  def initialize(model,color)
+      @model = model
+      @color = color
+      @speed = 1
+      @time = Time.new
+      @start_time = Time.new
+      @odometer = 0
+      @direction = "Straight"
+  end
+
+  def accelerate
+    odometer
+    @speed += 1
+  end
+
+  def decelerate
+    odometer
+    @speed -= 1
+  end
+
+  def odometer
+    @odometer += @speed * (Time.new - @time)
+    @time = Time.new
+
+  end
+
+  def turn_left
+    @direction = "Left"
+  end
+
+  def turn_forward
+    @direction = "Straight"
+  end
+
+  def turn_right
+    @direction = "Right"
+  end
+
+  def stop
+    odometer
+    @speed = 0
+  end
+
+  def status
+    puts "The direction you are heading: #{@direction} in your #{@color} #{@model}"
+    puts "Current speed: #{@speed}"
+
+    puts "Total distance traveled #{@odometer.floor}"
+    puts "You have been traveling for #{(Time.new - @start_time).floor} seconds."
+  end
+end
 
 
 
