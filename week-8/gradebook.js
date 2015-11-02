@@ -1,6 +1,6 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with:]
+I worked on this challenge with: Eric Dell'Aringa/Celeste Carter
 This challenge took me [#] hours.
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
@@ -18,38 +18,87 @@ var scores = [ [80, 70, 70, 100],
 
 
 
-
-
 // __________________________________________
 // Write your code below.
 
+/*
+
+var gradebook = {}
+
+for (var names in students) {
+  gradebook[students[names]] = {};
+  gradebook[students[names]]["testScores"] = scores[names];
+}
 
 
+gradebook.addScore = function(name, grade) {
+  this[name]["testScores"].push(grade);
+}
 
+gradebook.getAverage = function(name) {
+  return average(this[name]["testScores"]);
+}
 
+function average(array) {
+  var sum = 0;
+  for(var i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  return sum / array.length;
+} 
+console.log(gradebook);
 
-
+*/
 
 // __________________________________________
 // Refactored Solution
 
+var gradebook = {}
+
+for (var names in students) {
+  gradebook[students[names]] = {};
+  gradebook[students[names]]["testScores"] = scores[names];
+}
 
 
+gradebook.addScore = function(name, grade) {
+  this[name]["testScores"].push(grade);
+}
 
+gradebook.getAverage = function(name) {
+  return average(this[name]["testScores"]);
+}
+
+function average(array) {
+  var sum = 0;
+  for (var i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  return sum / array.length;
+} 
+console.log(gradebook);
 
 
 
 
 // __________________________________________
 // Reflect
+/*
 
 
+What did you learn about adding functions to objects?
 
+Adding functions to objects can be done outside of the object using dot or bracket notation.  I found this very helpful that instead of adding it directly in the empty object I created above we were able to just create a function property using dot notation.
 
+How did you iterate over nested arrays in JavaScript?
 
+We iterated over nested arrays using for..in.. loops.  I had already done assignment 8.3 before this one so I was a little familiar and more prepared when approaching this problem.
 
+Were there any new methods you were able to incorporate? If so, what were they and how did they work?
 
+When trying to "push" a grade into the gradebook[name]["testScores"] array I wasn't able to use '<< grade' instead I had to use .push(grade).  This was something I didn't find very intuitive and had I not been confident our code should work the first time I would have tried to approach the problem in a completely different way.  I feel more comfortable after this assignment with JS syntax which I feel like I still have some trouble with.
 
+*/
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
