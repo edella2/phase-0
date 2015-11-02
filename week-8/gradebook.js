@@ -53,6 +53,8 @@ console.log(gradebook);
 // __________________________________________
 // Refactored Solution
 
+// We were not able to find any way to make our code more DRY. We tried defining score[name] for gradebook[students[names]]["testScores"] without defining it beforehand.  We got an error each time and found that it was necessary to define the empty object.
+
 var gradebook = {}
 
 for (var names in students) {
